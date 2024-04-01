@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Roolup test</title>
+
 </head>
 
 <body>
     <div id="main"></div>
-    <script src="./main.js"></script>
+    <script src=" ./bundle.js"></script>
     <script>
-
+        setTimeout(function () {
+            preview("button", "page")
+        }, 1000)
+        window.addEventListener("error", function () {
+            console.log("thre is any error");
+        })
     </script>
+    <link rel="stylesheet" href="./front/src/static/style.css">
 </body>
 
 </html>
