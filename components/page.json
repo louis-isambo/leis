@@ -1,0 +1,81 @@
+{
+    "#$p#$h1Page component (composant de carte)": [
+        "En vue de rendre votre application plus structurée, le #$mcomposant_Page vous",
+        "donne la possibilité de créer une structure de #$mpaginage dans votre",
+        "application. Ce component permet de découper votre application en plusieurs",
+        " #$msections différentes, chaque section est identifiée par une #$mpropriété",
+        "d'identification par #$mClé_unique (#$mlinkName)"
+    ],
+    "#$p": "Page component vous permetde de (d') :",
+    "#$ul": [
+        "Créer  section à part entière",
+        "identifier une section créée, par une #$mClé_unique",
+        "Rechercher une section particulière via sa #$mClé_unique",
+        "Mette des liens entre différentes sections",
+        "Avoir unboutton qui, une fois cliqué affiche la section précédement visitée",
+        "Decliner (cacher) les autres sections et de n'afficher ou rendre visible que la section solicitée"
+    ],
+    "#$pUtilisation": [
+        "Pour pouvoir utiliser le composant  #$mPage, vous devez créer un boutton",
+        "#$mPageButton qui va  mettre un lien entre le contenu de la section et son #$mbouton",
+        "#$l#-$?cliquez_ici_pour_voir_en_détail_l'utilisation_de_pageButton"
+    ],
+    "#$p": [
+        "Si l'utilisation du composant #$mPageButton vous semble compliquée ou pas",
+        "intuitive, la méthode #$mdéfine vous donne  la possibilité de créer une",
+        "nouvelle section (page) tout en mettant #$mId et le contenu de la section",
+        "en parametres. Voir la méthode define."
+    ],
+    "#$pLes propriétés": "Voici quelques propriétés pour utiliser le composant Pagz:",
+    "#$thprops_table": [
+        "Propriété",
+        "Déscription",
+        "Type"
+    ],
+    "#$tableprops_table": [
+        [
+            "parent",
+            [
+                "définit l'élément parent du composant page, indique là où vous",
+                "allez injecter vos différentes sections (pages)"
+            ],
+            "#$mBaseElement"
+        ],
+        [
+            "legend",
+            [
+                "La Propriété #$mlegend vous permet de mettre une liste de #$mPageButton ",
+                "que comportera votre PageComponent"
+            ],
+            "#$marray<pageButton>"
+        ],
+        [
+            "content",
+            [
+                "La Propriété #$mcontent permet de définir les éléments qui seront",
+                " affichés dans la section principale (main) du PageComponent"
+            ],
+            "#$marray<mBaseElement>"
+        ],
+        [
+            "currentPage",
+            [
+                "Par défaut la Propriété #$mcurrentPage a comme valeur #$mmain qui signifie ",
+                "que la section active est la section principale du compoosant. Elle recupère  ",
+                "la section  qui est visible "
+            ],
+            "#$mreadonly"
+        ]
+    ],
+    "#$pLes méthodes": [
+        "Leistrap Page component met à votre disposition quelques méthodes",
+        "que vous pouvez appeler ou invoquer, ces dernières vous permettent d'avantage",
+        "de rendre votre composant Page interactif et dynamique."
+    ],
+    "#$thmethos_table": [
+        "Méthode",
+        "Déscription",
+        "Parametres"
+    ],
+    "type": "Composant"
+}

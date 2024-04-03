@@ -1,0 +1,47 @@
+{
+    "#$pLes propriétés": " Voice un paragraphe qui decrit les props....",
+    "#$code": [
+        {
+            "lang": "html",
+            "title": "index",
+            "content": "<html></html>"
+        },
+        {
+            "lang": "js",
+            "title": "main",
+            "content": "console.log(10)"
+        }
+    ],
+    "#$code": [
+        {
+            "lang": "html",
+            "title": "index",
+            "content": "<html></html>"
+        },
+        {
+            "lang": "js",
+            "title": "main",
+            "content": "#$excodecodeBtns"
+        },
+        {
+            "lang": "css",
+            "title": "style",
+            "content": "#$excodecss"
+        },
+        {
+            "lang": "js",
+            "title": "leistrap",
+            "content": "console.log(10)"
+        },
+        {
+            "lang": "js",
+            "title": "button",
+            "content": "console.log(10)"
+        },
+        {
+            "lang": "js",
+            "title": "leistrap",
+            "content": "console.log(10)"
+        }
+    ]
+}
