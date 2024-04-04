@@ -29,19 +29,19 @@
             "content": "#$excodecss"
         },
         {
-            "lang": "js",
-            "title": "leistrap",
-            "content": "console.log(10)"
+            "lang": "json",
+            "title": "page",
+            "content": "#$api:/components/page.json"
         },
         {
-            "lang": "js",
+            "lang": "json",
             "title": "button",
-            "content": "console.log(10)"
+            "content": "#$api:/components/button.json"
         },
         {
             "lang": "js",
             "title": "leistrap",
-            "content": "console.log(10)"
+            "content": "#$api:/components/codes/leistrap.txt"
         }
     ]
 }

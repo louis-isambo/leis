@@ -72,10 +72,48 @@
         "que vous pouvez appeler ou invoquer, ces dernières vous permettent d'avantage",
         "de rendre votre composant Page interactif et dynamique."
     ],
-    "#$thmethos_table": [
+    "#$thmethods_table": [
         "Méthode",
         "Déscription",
         "Parametres"
+    ],
+    "#$tablemethods_table": [
+        [
+            "removePage",
+            [
+                "Permet de détruire une page, section tout en supprimant les liens et ",
+                "boutton déclancheur associé à la section",
+                "PageName"
+            ]
+        ],
+        [
+            "invoke",
+            [
+                "Permet d'appeler ou invoquer une section particulière via son ",
+                "pageName enfin de la rendre visible."
+            ],
+            "PageName"
+        ],
+        [
+            "addButton",
+            [
+                "Permet d'ajouter un boutton de page  (pageButton) avec son contenu (la ",
+                "section) sur le composant. Si  le paramètre #$mparent de la méthodeest null",
+                "le le boutton sera ajouté dans la main page (dans la section principale).",
+                "Vous pouvez préciser l'élément parent de ce boutton en mettant tout simplement",
+                "un élément BaseElement dans le paramètre parent"
+            ],
+            "pageButton, parent"
+        ],
+        [
+            "define",
+            [
+                "Eh bine ! La méthode #$mdefine vous facilite l'ajout automatique d'une nouvelle",
+                "section. Cette Méthode vous permet d'ajouter une nouvelle section dans votre",
+                "PageComponent tout en mettant simplement le pageName et le contenu"
+            ],
+            "pageName, BaseElement"
+        ]
     ],
     "type": "Composant"
 }
