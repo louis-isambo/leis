@@ -1,0 +1,56 @@
+{
+    "#$p#$h1inputs component": [
+        "Créez des champs de saisie texte, mot de passe, email etc..",
+        "avec inputs component, il vous donne la possibilité de contrôler",
+        "les champs de saisie et d'appliquer certaines méthodes facilitant",
+        "la vérifivation de données entrées (saisies par utilisateur)."
+    ],
+    "#$p": [
+        "Une liste mottrant les champs / boutons de saisie que vous pouvez utiliser",
+        "ou appeler sur Input component : "
+    ],
+    "#$ul": [
+        [
+            "ButtonRadio : La méthode Input().getRadio() crée un composant de Boutons",
+            "radios et le retourne directement. En effet si vous avez besoin de mettre",
+            "ou ajouter un boutonRadio dans votre applicatio, page , site le composant",
+            "ButtonRadio généré par le méthode .getRadio vous donne la possibilité de",
+            "le faire.",
+            {
+                "#h4": "Exemple",
+                "#$code": [
+                    {
+                        "lang": "js",
+                        "title": "RadioBtn",
+                        "content": "#$api:/components/codes/inputs.js"
+                    }
+                ],
+                "#$p": [
+                    "le composant ButtonRadio apporte quelques méthodes essentielles pour",
+                    "la manipulation, modification d'un bouton radio"
+                ],
+                "#$alertif": [
+                    "Note : Le composant ButtonRadio par défaut, met en block tous les boutons",
+                    "radio que vous allez ajouter (via sa méthode add) et les affiche sous une liste",
+                    "verticale. Vous pouvez ou vous avec la possibilité de créer qu'un seul ButtonRadio",
+                    "component dans votre applicatio, page, ou site entier et ce dernier controlera tous",
+                    "les Boutos radio que vous avez créés."
+                ]
+            }
+        ]
+    ],
+    "#$h2": "Les méthodes applicables",
+    "#$thtable_inputs_mathods": [
+        "Méthode",
+        "Déscription",
+        "paramètres"
+    ],
+    "#$tabletable_inputs_mathods": [
+        [
+            "add",
+            [
+                "La méthode add permet de créer, ajputer un nouveau "
+            ]
+        ]
+    ]
+}

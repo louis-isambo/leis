@@ -132,7 +132,7 @@
         return conf
     }
 
-    var leisDocStyle = ":root {\r\n    --leisDoc-header: 70px;\r\n    --leisDoc-side-w: 280px;\r\n    --leis-font-size: 1.10rem;\r\n\r\n}\r\n\r\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n    margin-top: 2rem;\r\n    margin-bottom: 1rem;\r\n    padding: 14px;\r\n\r\n}\r\n\r\ntable {\r\n    margin-top: 0.5rem;\r\n    margin-bottom: 0.22rem;\r\n    font-size: var(--leis-font-size);\r\n}\r\n\r\n* {\r\n    line-height: 1.8;\r\n\r\n\r\n\r\n}\r\n\r\n.doc-parent-list {\r\n    list-style-position: inside;\r\n    padding: 10px 16px;\r\n\r\n}\r\n\r\n.leisDoc-topNav {\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n    width: 100%;\r\n    height: var(--leisDoc-header);\r\n    background-color: var(--leis-dark-cl);\r\n\r\n    border-bottom: var(--leis-border);\r\n    display: flex;\r\n    align-content: center;\r\n    align-items: center;\r\n    color: #d1cdcd;\r\n    z-index: 100;\r\n}\r\n\r\n.leisDoc-topNav * {\r\n    color: inherit;\r\n}\r\n\r\n.leisDoc-topNav li {\r\n    cursor: pointer;\r\n}\r\n\r\n.icon-topNav {\r\n    display: none;\r\n}\r\n\r\n.leisDoc-sideBar {\r\n    display: inherit;\r\n}\r\n\r\n.leisDoc-sideBar [class*=\"accordion\"] {\r\n    box-shadow: none;\r\n    background-color: inherit;\r\n    border: none;\r\n    outline: none;\r\n\r\n}\r\n\r\n.leisDoc-sideBar .leis-group {\r\n    padding-left: 15px;\r\n}\r\n\r\n.leisDoc-sideBar .leis-accordion-btn {\r\n    padding: 2px 4px;\r\n    border-radius: 5px;\r\n}\r\n\r\n.leisDoc-sideBar .leis-group li {\r\n    border-radius: 5px;\r\n    font-size: 1rem;\r\n}\r\n\r\n.leisDoc-sideBar .leis-accordion-btn:hover,\r\n.leisDoc-sideBar .leis-group li:hover,\r\n.leisDoc-sideBar .leis-group li.active {\r\n    background-color: var(--leis-select-cl);\r\n    cursor: pointer;\r\n\r\n}\r\n\r\n.leisDoc-sideBar {\r\n    position: fixed;\r\n    top: var(--leisDoc-header);\r\n    left: 0;\r\n    width: var(--leisDoc-side-w);\r\n    height: calc(100% - var(--leisDoc-header));\r\n    background-color: var(--leis-container-cl);\r\n    outline: none;\r\n    padding: 20px;\r\n    border: none;\r\n    border-right: var(--leis-border);\r\n}\r\n\r\n.leisDoc-sideBar .leis-btn-close {\r\n    position: absolute;\r\n    z-index: 1;\r\n    right: 0;\r\n    top: -10px;\r\n}\r\n\r\n.leisDoc-sideHead {\r\n    position: relative;\r\n    min-height: 3rem;\r\n    width: 100%;\r\n    display: none;\r\n\r\n}\r\n\r\n.leisDoc-body {\r\n    padding: 2rem;\r\n    position: relative;\r\n    background-color: var(--leis-container-cl);\r\n    width: calc(100% - (var(--leisDoc-side-w) + 250px));\r\n    min-height: calc(100% - var(--leisDoc-header));\r\n    margin-top: var(--leisDoc-header);\r\n    margin-left: var(--leisDoc-side-w);\r\n}\r\n\r\n.leisDoc-body.blur {\r\n    filter: none;\r\n}\r\n\r\n.icon-topNav {\r\n    position: relative;\r\n    font-size: 2rem;\r\n    display: none;\r\n\r\n}\r\n\r\n\r\n.blur {\r\n    filter: blur(5px);\r\n}\r\n\r\n.code-container {\r\n    margin-top: 1rem;\r\n    position: relative;\r\n    width: 100%;\r\n    height: auto;\r\n    min-height: 40vh;\r\n    max-height: 90vh;\r\n    border-radius: 8px;\r\n    padding: 10px;\r\n    background-color: var(--leis-code-cnt-cl);\r\n\r\n}\r\n\r\n.code-header {\r\n    position: relative;\r\n    width: 100%;\r\n    margin-bottom: 1rem;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    align-content: start;\r\n\r\n}\r\n\r\n.codeTitle {\r\n    font-size: 1rem;\r\n    font-weight: 400;\r\n}\r\n\r\n.code-btn {\r\n    font-size: 14px;\r\n    font-weight: 400;\r\n}\r\n\r\n.code-btn.active {\r\n    font-weight: 500;\r\n    background-color: inherit !important;\r\n    border-bottom: 3px solid var(--leis-primary-cl);\r\n}\r\n\r\n.code-content,\r\n.code-content.active {\r\n    position: relative;\r\n    font-size: 1rem;\r\n    font-weight: 400;\r\n    line-height: 1;\r\n    font-family: var(--leis-font-monospace);\r\n    width: 100%;\r\n    min-height: 25vh;\r\n    max-height: 65vh;\r\n    border-radius: 6px;\r\n    margin-top: 0.5rem;\r\n    background-color: var(--leis-code-card);\r\n    white-space: nowrap;\r\n    padding: 10px;\r\n    overflow: auto;\r\n\r\n\r\n\r\n\r\n}\r\n\r\n.code-content * {\r\n    line-height: 1.2;\r\n}\r\n\r\n.threeBtnsCode {\r\n    position: relative;\r\n    display: inline-block;\r\n    width: 10px;\r\n    height: 10px;\r\n    margin-left: 5px;\r\n    border-radius: 50%;\r\n\r\n}\r\n\r\n/* flex table */\r\n\r\n.cell {\r\n    position: relative;\r\n    outline: none;\r\n    border: none;\r\n    padding: none;\r\n    margin: none;\r\n    width: 100%;\r\n    min-height: 100%;\r\n    overflow: hidden;\r\n    text-overflow: ellipsis;\r\n    padding: 10px 14px;\r\n\r\n\r\n}\r\n\r\n.cell:first-child,\r\n.cell:last-child {\r\n    width: 40%;\r\n}\r\n\r\n.cell:not(:first-child) {\r\n    border-left: 1px solid #ccc;\r\n}\r\n\r\n.flexTable-container {\r\n    padding: 0;\r\n    margin: 0;\r\n}\r\n\r\n.flexTable-table {\r\n    border: 1px solid #ccc;\r\n}\r\n\r\n.flexttable-row,\r\n.flexttable-head {\r\n    width: 100%;\r\n    position: relative;\r\n    margin: 0;\r\n\r\n\r\n}\r\n\r\n.flexttable-row {\r\n    border-top: 1px solid #ccc;\r\n\r\n}\r\n\r\n.flexttable-body {\r\n    position: relative;\r\n    width: 100%;\r\n    padding: 0;\r\n    margin: 0;\r\n}\r\n\r\n@media screen and (max-width : 1000px) {\r\n    .cell {\r\n        padding-left: 0;\r\n        padding-right: 0;\r\n\r\n\r\n    }\r\n\r\n    .flexttable-head,\r\n    .cell:last-child {\r\n        display: none;\r\n    }\r\n\r\n    .cell:first-child {\r\n        font-weight: 500;\r\n        font-size: calc(var(--leis-font-size + 4px));\r\n        padding: 2px 6px;\r\n    }\r\n\r\n\r\n    .flexttable-row {\r\n\r\n        -webkit-box-orient: vertical !important;\r\n        -ms-flex-direction: column !important;\r\n        flex-direction: column !important;\r\n    }\r\n\r\n    .cell,\r\n    .flexttable-row div,\r\n    .flexttable-body div,\r\n    table {\r\n        border: none !important;\r\n        outline: none;\r\n    }\r\n\r\n    .leisDoc-sideHead {\r\n        display: block;\r\n    }\r\n\r\n    .leisDoc-sideBar {\r\n        z-index: 1000;\r\n        animation: hideSide .8s;\r\n        top: 0;\r\n        height: 100%;\r\n        display: none;\r\n        background-color: var(--leis-dark-cl);\r\n        color: #d1cdcd;\r\n        border: none;\r\n\r\n    }\r\n\r\n    .leisDoc-sideBar * {\r\n        color: inherit;\r\n\r\n    }\r\n\r\n    .leisDoc-sideBar .leis-group li {\r\n        border-color: #777676cc;\r\n        font-size: calc(var(--leis-font-size) + 0.22erm)\r\n    }\r\n\r\n\r\n    .leisDoc-body.blur {\r\n        filter: blur(5px);\r\n    }\r\n\r\n    .leisDoc-body {\r\n        margin: 0;\r\n        padding: 0 8rem;\r\n        width: 100%;\r\n    }\r\n\r\n    .icon-topNav {\r\n        display: block;\r\n    }\r\n\r\n    .leisDoc-sideBar.sideShow {\r\n        display: block;\r\n        animation: showside .4s;\r\n    }\r\n\r\n    .sideContainer.active {\r\n        position: fixed;\r\n        width: 100%;\r\n        height: 100%;\r\n        left: 0;\r\n        top: 0;\r\n        background-color: rgba(133, 82, 195, 0.16);\r\n        z-index: 900;\r\n    }\r\n\r\n    @keyframes showside {\r\n        from {\r\n            opacity: 0.2;\r\n            left: -100%;\r\n        }\r\n\r\n        to {\r\n            opacity: 1;\r\n            left: 0;\r\n        }\r\n    }\r\n\r\n    @keyframes hideSide {\r\n        from {\r\n            display: block;\r\n            opacity: 1;\r\n            left: 0;\r\n        }\r\n\r\n        to {\r\n            left: -350px;\r\n            opacity: 0;\r\n        }\r\n    }\r\n}\r\n\r\n@media screen and (max-width: 900px) {\r\n\r\n\r\n\r\n    * {\r\n        line-height: 1.6;\r\n    }\r\n\r\n    .leisDoc-body {\r\n        padding: 0 4rem;\r\n    }\r\n}\r\n\r\n\r\n@media screen and (max-width: 800px) {\r\n    .leisDoc-body {\r\n        padding: 0 2rem;\r\n    }\r\n}\r\n\r\n@media screen and (max-width: 700px) {\r\n    .leisDoc-body {\r\n        padding: 0 1rem;\r\n    }\r\n}";
+    var leisDocStyle = ":root {\r\n    --leisDoc-header: 70px;\r\n    --leisDoc-side-w: 280px;\r\n    --leis-font-size: 1.10rem;\r\n\r\n}\r\n\r\n@font-face {\r\n    font-family: Inter;\r\n    src: url(\"./static/fonts/Inter-VariableFont_slnt\\,wght.ttf\");\r\n\r\n}\r\n\r\n@font-face {\r\n    font-family: Lato;\r\n    src: url(\"./static/fonts/Lato-Black.ttf\");\r\n}\r\n\r\nh1,\r\nh2,\r\nh3,\r\nh4,\r\nh5,\r\nh6 {\r\n    margin-top: 2rem;\r\n    margin-bottom: 1rem;\r\n    padding: 14px;\r\n    font-family: Lato, var(--leis-font-sans-serif) !important;\r\n    font-weight: 500;\r\n\r\n}\r\n\r\nh1 {\r\n    font-size: 40px;\r\n}\r\n\r\ntable {\r\n    margin-top: 0.5rem;\r\n    margin-bottom: 0.22rem;\r\n    font-size: var(--leis-font-size);\r\n}\r\n\r\n* {\r\n    line-height: 1.8;\r\n    font-weight: 400;\r\n    font-family: Inter, var(--leis-font-sans-serif) !important;\r\n\r\n\r\n}\r\n\r\n.doc-parent-list {\r\n    list-style-position: inside;\r\n    padding: 10px 16px;\r\n\r\n}\r\n\r\n.leisDoc-topNav {\r\n    position: fixed;\r\n    top: 0;\r\n    left: 0;\r\n    width: 100%;\r\n    height: var(--leisDoc-header);\r\n    background-color: var(--leis-dark-cl);\r\n\r\n    border-bottom: var(--leis-border);\r\n    display: flex;\r\n    align-content: center;\r\n    align-items: center;\r\n    color: #d1cdcd;\r\n    z-index: 100;\r\n}\r\n\r\n.leisDoc-topNav * {\r\n    color: inherit;\r\n}\r\n\r\n.leisDoc-topNav li {\r\n    cursor: pointer;\r\n}\r\n\r\n.icon-topNav {\r\n    display: none;\r\n}\r\n\r\n.leisDoc-sideBar {\r\n    display: inherit;\r\n}\r\n\r\n.leisDoc-sideBar [class*=\"accordion\"] {\r\n    box-shadow: none;\r\n    background-color: inherit;\r\n    border: none;\r\n    outline: none;\r\n\r\n}\r\n\r\n.leisDoc-sideBar .leis-group {\r\n    padding-left: 15px;\r\n}\r\n\r\n.leisDoc-sideBar .leis-accordion-btn {\r\n    padding: 2px 4px;\r\n    border-radius: 5px;\r\n}\r\n\r\n.leisDoc-sideBar .leis-group li {\r\n    border-radius: 5px;\r\n    font-size: 1rem;\r\n}\r\n\r\n.leisDoc-sideBar .leis-accordion-btn:hover,\r\n.leisDoc-sideBar .leis-group li:hover,\r\n.leisDoc-sideBar .leis-group li.active {\r\n    background-color: var(--leis-select-cl);\r\n    cursor: pointer;\r\n\r\n}\r\n\r\n.leisDoc-sideBar {\r\n    position: fixed;\r\n    top: var(--leisDoc-header);\r\n    left: 0;\r\n    width: var(--leisDoc-side-w);\r\n    height: calc(100% - var(--leisDoc-header));\r\n    background-color: var(--leis-container-cl);\r\n    outline: none;\r\n    padding: 20px;\r\n    border: none;\r\n    border-right: var(--leis-border);\r\n}\r\n\r\n.leisDoc-sideBar .leis-btn-close {\r\n    position: absolute;\r\n    z-index: 1;\r\n    right: 0;\r\n    top: -10px;\r\n}\r\n\r\n.leisDoc-sideHead {\r\n    position: relative;\r\n    min-height: 3rem;\r\n    width: 100%;\r\n    display: none;\r\n\r\n}\r\n\r\n.leisDoc-body {\r\n    padding: 2rem;\r\n    position: relative;\r\n    background-color: var(--leis-container-cl);\r\n    width: calc(100% - (var(--leisDoc-side-w) + 250px));\r\n    min-height: calc(100% - var(--leisDoc-header));\r\n    margin-top: var(--leisDoc-header);\r\n    margin-left: var(--leisDoc-side-w);\r\n}\r\n\r\n.leisDoc-body.blur {\r\n    filter: none;\r\n}\r\n\r\n.icon-topNav {\r\n    position: relative;\r\n    font-size: 2rem;\r\n    display: none;\r\n\r\n}\r\n\r\n\r\n.blur {\r\n    filter: blur(5px);\r\n}\r\n\r\n\r\n/* flex table */\r\n\r\n.cell {\r\n    position: relative;\r\n    outline: none;\r\n    border: none;\r\n    padding: none;\r\n    margin: none;\r\n    width: 100%;\r\n    min-height: 100%;\r\n    overflow: hidden;\r\n    text-overflow: ellipsis;\r\n    padding: 10px 14px;\r\n\r\n\r\n}\r\n\r\n.cell:first-child,\r\n.cell:last-child {\r\n    width: 40%;\r\n}\r\n\r\n.cell:not(:first-child) {\r\n    border-left: 1px solid #ccc;\r\n}\r\n\r\n.flexTable-container {\r\n    padding: 0;\r\n    margin: 0;\r\n}\r\n\r\n.flexTable-table {\r\n    border: 1px solid #ccc;\r\n}\r\n\r\n.flexttable-row,\r\n.flexttable-head {\r\n    width: 100%;\r\n    position: relative;\r\n    margin: 0;\r\n\r\n\r\n}\r\n\r\n.flexttable-row {\r\n    border-top: 1px solid #ccc;\r\n\r\n}\r\n\r\n.flexttable-body {\r\n    position: relative;\r\n    width: 100%;\r\n    padding: 0;\r\n    margin: 0;\r\n}\r\n\r\n.code-oneFile-container *,\r\n.code-content.active *,\r\n.code-lineCode-container * {\r\n    font-family: var(--leis-font-monospace) !important;\r\n    font-size: 1rem;\r\n\r\n}\r\n\r\n@media screen and (max-width : 1000px) {\r\n    .cell {\r\n        padding-left: 0;\r\n        padding-right: 0;\r\n\r\n\r\n    }\r\n\r\n    .flexttable-head,\r\n    .cell:last-child {\r\n        display: none;\r\n    }\r\n\r\n    .cell:first-child {\r\n        font-weight: 500;\r\n        font-size: calc(var(--leis-font-size + 4px));\r\n        padding: 2px 6px;\r\n    }\r\n\r\n\r\n    .flexttable-row {\r\n\r\n        -webkit-box-orient: vertical !important;\r\n        -ms-flex-direction: column !important;\r\n        flex-direction: column !important;\r\n    }\r\n\r\n    .cell,\r\n    .flexttable-row div,\r\n    .flexttable-body div,\r\n    table {\r\n        border: none !important;\r\n        outline: none;\r\n    }\r\n\r\n    .leisDoc-sideHead {\r\n        display: block;\r\n    }\r\n\r\n    .leisDoc-sideBar {\r\n        z-index: 1000;\r\n        animation: hideSide .8s;\r\n        top: 0;\r\n        height: 100%;\r\n        display: none;\r\n        background-color: var(--leis-dark-cl);\r\n        color: #d1cdcd;\r\n        border: none;\r\n\r\n    }\r\n\r\n    .leisDoc-sideBar * {\r\n        color: inherit;\r\n\r\n    }\r\n\r\n    .leisDoc-sideBar .leis-group li {\r\n        border-color: #777676cc;\r\n        font-size: calc(var(--leis-font-size) + 0.22erm)\r\n    }\r\n\r\n\r\n    .leisDoc-body.blur {\r\n        filter: blur(5px);\r\n    }\r\n\r\n    .leisDoc-body {\r\n        margin: 0;\r\n        padding: 0 8rem;\r\n        width: 100%;\r\n    }\r\n\r\n    .icon-topNav {\r\n        display: block;\r\n    }\r\n\r\n    .leisDoc-sideBar.sideShow {\r\n        display: block;\r\n        animation: showside .4s;\r\n    }\r\n\r\n    .sideContainer.active {\r\n        position: fixed;\r\n        width: 100%;\r\n        height: 100%;\r\n        left: 0;\r\n        top: 0;\r\n        background-color: rgba(133, 82, 195, 0.16);\r\n        z-index: 900;\r\n    }\r\n\r\n    @keyframes showside {\r\n        from {\r\n            opacity: 0.2;\r\n            left: -100%;\r\n        }\r\n\r\n        to {\r\n            opacity: 1;\r\n            left: 0;\r\n        }\r\n    }\r\n\r\n    @keyframes hideSide {\r\n        from {\r\n            display: block;\r\n            opacity: 1;\r\n            left: 0;\r\n        }\r\n\r\n        to {\r\n            left: -350px;\r\n            opacity: 0;\r\n        }\r\n    }\r\n}\r\n\r\n@media screen and (max-width: 900px) {\r\n\r\n\r\n\r\n    * {\r\n        line-height: 1.6;\r\n    }\r\n\r\n    .leisDoc-body {\r\n        padding: 0 4rem;\r\n    }\r\n}\r\n\r\n\r\n@media screen and (max-width: 800px) {\r\n    .leisDoc-body {\r\n        padding: 0 2rem;\r\n    }\r\n}\r\n\r\n@media screen and (max-width: 700px) {\r\n    .leisDoc-body {\r\n        padding: 0 1rem;\r\n    }\r\n}";
 
     var TabPage = "{\r\n    \"#$pLe verbe être\": [\r\n        \"je suis\",\r\n        \"tu es \",\r\n        \"elle est \"\r\n    ],\r\n    \"#$pLes objet à utiliser\": \"\",\r\n    \"#$thprops_table\": [\r\n        \"Propriété\",\r\n        \"Description\",\r\n        \"type\"\r\n    ],\r\n    \"#$tableprops_table\": [\r\n        [\r\n            \"#$mparent\",\r\n            \"définit l'élement parent\",\r\n            \"BaseElement\"\r\n        ]\r\n    ],\r\n    \"#$ul\": [\r\n        \"item 1\",\r\n        \"item\"\r\n    ],\r\n    \"#$alertpr\": \"y'a une erreur\"\r\n}";
 
@@ -323,15 +323,27 @@
       })
     }
 
-    var CodeStyle = "/* code example */\r\n.tab {\r\n    display: inline-block;\r\n    min-width: 28px;\r\n}\r\n\r\n.coli {\r\n    padding: 0 5px;\r\n}\r\n\r\n.fun {\r\n\r\n    font-style: italic;\r\n    color: rgb(207, 13, 214);\r\n}";
+    var KeyWORDS = {
 
-    function codeSnappet(text_) {
+        "builtin": [
+            "var",
+            "const",
+            "let",
+            "function",
+            "return",
+            "import",
+            "export"
+        ]
+    };
 
+    function codeConvert(text_, option) {
+        if (!option) option = {};
+        option.br = true;
         function convert(text) {
             var tab = [32, 32, 32, 32].map(i => String.fromCharCode(i)).join("");
             var spc = [32].map(i => String.fromCharCode(i)).join("");
             var nl = /\n/g;
-            var keywords = ["var", "const", "let", "function", "return"];
+            var keywords = KeyWORDS.builtin;
             function getKeysWords(txt, kys) {
                 txt = txt.replace(new RegExp(nl, "g"), "%nl");
                 txt = txt.replace(new RegExp(tab, 'g'), "%tb");
@@ -365,15 +377,18 @@
             ];
 
             const keys = {
-                "const": varia, "let": varia, "var": varia,
-                "nl": () => "<br/>",
-                "tb": () => STPC("tab"),
+
+                "nl": () => !option.br ? "" : "<br/>",
+                "tb": () => !option.br ? "" : STPC("tab"),
                 ":": () => STPC("coli", ":"),
                 "=": () => STPC("coli", "="),
                 "function": () => STPC("fun", "function"),
                 "20": () => String.fromCharCode(32),
                 "return": "red"
             };
+            KeyWORDS.builtin.forEach(item => {
+                keys[item] = varia;
+            });
             let getKeys = rpc(trpc, txt);
             Object.keys(keys).forEach(item => {
                 if (typeof keys[item] === "function") {
@@ -388,11 +403,134 @@
         return Highlight(convert(text_))
     }
 
-    function Display() {
+    var codeStyle = ".code-container {\r\n    margin-top: 1rem;\r\n    position: relative;\r\n    width: 100%;\r\n    height: auto;\r\n    min-height: 40vh;\r\n    max-height: 90vh;\r\n    border-radius: 8px;\r\n    padding: 10px;\r\n    background-color: var(--leis-code-cnt-cl);\r\n\r\n}\r\n\r\n.code-header {\r\n    position: relative;\r\n    width: 100%;\r\n    margin-bottom: 1rem;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    align-content: start;\r\n\r\n}\r\n\r\n.codeTitle {\r\n    font-size: 1rem;\r\n    font-weight: 400;\r\n    white-space: nowrap;\r\n    overflow: hidden;\r\n    text-overflow: ellipsis;\r\n    max-width: 50%;\r\n}\r\n\r\n.code-btn {\r\n    font-size: 14px;\r\n    font-weight: 400;\r\n}\r\n\r\n.code-btn.active {\r\n    font-weight: 500;\r\n    border-bottom: 3px solid var(--leis-primary-cl);\r\n}\r\n\r\n\r\n\r\n.code-content,\r\n.code-content.active {\r\n    position: relative;\r\n    font-size: 1rem;\r\n    font-weight: 400;\r\n    line-height: 1;\r\n    font-family: var(--leis-font-monospace) !important;\r\n    width: 100%;\r\n    min-height: 25vh;\r\n    max-height: 65vh;\r\n    border-radius: 6px;\r\n    margin-top: 0.5rem;\r\n    background-color: var(--leis-code-card);\r\n    white-space: nowrap;\r\n    padding: 10px;\r\n    overflow: auto;\r\n\r\n\r\n\r\n\r\n}\r\n\r\n.code-content * {\r\n    line-height: 1.2;\r\n}\r\n\r\n.threeBtnsCode {\r\n    position: relative;\r\n    display: inline-block;\r\n    width: 10px;\r\n    height: 10px;\r\n    margin-left: 5px;\r\n    border-radius: 50%;\r\n\r\n}\r\n\r\n/* line code  */\r\n\r\n.code-lineCode-container {\r\n    background-color: var(--leis-code-card);\r\n    padding: 12px 16px;\r\n    border-radius: 6px;\r\n    white-space: nowrap;\r\n    font-family: var(--leis-font-monospace);\r\n    overflow: hidden;\r\n    overflow-x: auto;\r\n}\r\n\r\n/* code onefile */\r\n.code-oneFile-container {\r\n    font-family: var(--leis-font-monospace);\r\n    position: relative;\r\n    width: 100%;\r\n    font-size: 1rem;\r\n}\r\n\r\n.code-oneFile-container .code-content {\r\n    padding: 30px;\r\n}\r\n\r\n/* --------------------------------------------------------------------- */\r\n/* code example */\r\n.tab {\r\n    display: inline-block;\r\n    min-width: 28px;\r\n}\r\n\r\n.coli {\r\n    padding: 0 5px;\r\n}\r\n\r\n.fun {\r\n\r\n    font-style: italic;\r\n    color: rgb(207, 13, 214);\r\n}";
 
-        leistrap.addStyle(CodeStyle);
-        function displayComponentElement(event, obj, name, tab) {
-            const MAIN = leistrap.Div();
+    function codeSnappet(title) {
+        leistrap.addStyle(codeStyle);
+        function checkingCode(value, removeIdObject) {
+
+            const codeContainer = leistrap.Div({ attr: { className: "code-container" } });
+
+            var codeHeaderContentBtns = leistrap.createContent('Span', 3, function (span, index) {
+                span.setStyleProp("backgroundColor", `var(--leis-${["danger", "warning", "success"][index]}-cl)`);
+                span.attr = { className: "threeBtnsCode" };
+                return span
+            });
+            var codeTitle = leistrap.P({ text: title || "Leistrap dode Snappet", attr: { className: "codeTitle" } });
+            var exeCode = leistrap.Button({ text: "Exécuter" }).getButton();
+            exeCode.setType("success").setSize("small");
+            var codeHeaderContent = leistrap.Div({
+                content: [
+                    leistrap.Div({ content: codeHeaderContentBtns })
+                ],
+                attr: { className: "codeHeaderContent" }
+            });
+
+            leistrap.Div({
+                parent: codeContainer,
+                attr: { className: "code-header" },
+                content: [codeHeaderContent, codeTitle, leistrap.Div({ content: [exeCode] })]
+            });
+
+            const tabBtns = [];
+            const tabContent = [];
+            value.forEach((code, index) => {
+                var item = {};
+                leistrap.dep.obj.loopObj(code, function (v, k) {
+
+                    // test if we use codeSnappet to the Display extension
+                    item[removeIdObject ? removeIdObject(k) : k] = v;
+                });
+                var btn = leistrap.Span({
+                    text: `${item.title}.${item.lang}`,
+                    attr: { className: "code-btn" },
+                    autoClick: item.open
+                });
+
+                var id = leistrap.dep.generateId(3, 8);
+                var codeContent = getCodeContent(item, codeCard, null, id);
+
+                var codeCard = leistrap.Div({ innerHtml: codeConvert(codeContent), addData: { id } });
+                leistrap.event.handle(id, function (e, d) {
+                    codeCard._conf.innerHTML = d;
+                });
+                var content = leistrap.Div({ attr: { className: 'code-content' }, content: [codeCard] });
+                tabBtns.push(btn);
+                tabContent.push(content);
+                code = null;
+            });
+            leistrap.TabPage({
+                tabLink: tabBtns,
+                tabContent: tabContent,
+                parent: codeContainer
+            });
+            return codeContainer
+
+        }
+
+        function getCodeContent(item, codeCard, dec, id) {
+            var codeContent;
+            // verify if we need tp get code content from leistrap.codeExample 
+            // property
+            if (/#\$Excode/gi.test(item.content)) {
+                codeContent = leistrap.codeExample[item.content.replace(/#\$Excode/gi, "")].trim();
+            }
+
+            // get the code content from other file across the internet
+            // or web server
+            else if (/#\$api\:/gi.test(item.content)) {
+                // invoke the api:get channel for getting the code content
+                // in string type
+                var url = item.content.replace(/#\$api\:/gi, "").trim();
+
+                leistrap.event.invoke("api:get", null, url, getCodeContent_);
+                function getCodeContent_(data) {
+                    if (codeCard) { codeCard._conf.innerHTML = codeConvert(data); }
+                    if (id) { leistrap.event.invoke(id, null, codeConvert(data)); }
+                    item.content = data;
+                    if (dec) dec(item);
+                }
+                codeContent = "";
+            }
+
+            else { codeContent = item.content; }
+            item.content = codeContent;
+            if (dec) dec(item);
+            return codeContent
+        }
+        checkingCode.lineCode = function (obj) {
+            var code_ = obj.content || getCodeContent(obj, codeCard_);
+            var codeCard_ = leistrap.Div({ innerHtml: codeConvert(code_, { br: false }) });
+            return leistrap.Div({
+                attr: { className: "code-lineCode-container" },
+                content: [codeCard_]
+            })
+        };
+        checkingCode.decide = function (elem, res) {
+            function create(value) {
+                if (value !== "") {
+                    value.content.split(' ').length <= 100 ? elem.add(checkingCode.lineCode(value))
+                        : elem.add(checkingCode.oneFile(value));
+                }
+            }
+            getCodeContent(res, null, create);
+            return elem
+        };
+
+        checkingCode.oneFile = function (obj) {
+            var code_ = obj.content || getCodeContent(obj, codeCard_);
+            var codeCard_ = leistrap.Div({ innerHtml: codeConvert(code_) });
+            return leistrap.Div({
+                attr: { className: "code-oneFile-container" },
+                content: [leistrap.Div({ content: [codeCard_], attr: { className: "code-content" } })]
+            })
+        };
+        return checkingCode
+    }
+
+    function Display() {
+        function displayComponentElement(event, obj, name, tab, main) {
+            const MAIN = main || leistrap.Div();
             const type = ["Composant", "Elément"];
 
             const Stage = [
@@ -421,7 +559,7 @@
                 });
             });
 
-            tab.addTab(name, MAIN, true);
+            if (tab) tab.addTab(name, MAIN, true);
         }
 
         function checkTableHeader(key, value, rex) {
@@ -447,8 +585,8 @@
         }
         function checkTable(key, value, rex) {
             var data = value.map(item => item.map(valueTable => {
-                var p = leistrap.P({ text: joinTxt(valueTable) });
-                p.checkText = true;
+                var p = leistrap.P();
+                joinContent(valueTable, p);
                 return { widget: p }
             }));
             leistrap.event.invoke(key.replace(rex, ""), null, data);
@@ -470,8 +608,8 @@
             }
             if (!leistrap.dep.obj.isEmpty(value)) {
                 if (value.join) value = value.join(" ");
-                var paragraph = leistrap.P({ text: value });
-                paragraph.checkText = true;
+                var paragraph = leistrap.P();
+                joinContent(value, paragraph);
                 card.add(paragraph);
             }
 
@@ -483,9 +621,9 @@
             if (key.match(rex)[0].match(/ul/)) {
                 card.add(leistrap.List({
                     content: value.map(item => {
-                        var item = leistrap.Li({ text: item, attr: { className: "doc-item-list" } });
-                        item.checkText = true;
-                        return item
+                        var ListItem = leistrap.Li({ attr: { className: "doc-item-list" } });
+                        joinContent(item, ListItem);
+                        return ListItem
                     }),
                     attr: { className: 'doc-parent-list' }
 
@@ -504,90 +642,59 @@
             return result
         }
 
+        function checkCode(key, value, rex) {
+            var title;
+            if (leistrap.dep.obj.isString(value[0])) {
+                title = value[0];
+                value = value.slice(1, value.length);
+            }
+            if (key.length === 6) {
+
+                var code = codeSnappet(title);
+                if (value.length === 1) {
+                    var res = {};
+                    leistrap.dep.obj.loopObj(value[0], (v, k) => res[removeIdObject(k)] = v);
+                    return code.decide(leistrap.Div(), res)
+                }
+                else { return code(value, removeIdObject) }
+            }
+        }
         function checkHeading(key, value, rex) {
             if (key.length === 4) {
                 var heading = key.match(rex)[0].toUpperCase().replace(/#\$/, "");
-                return leistrap[heading]({ text: value })
+                var heading = leistrap[heading]();
+                joinContent(value, heading);
+                return heading
             }
         }
 
-        function joinTxt(value) {
-            return value.join ? value.join(" ") : value
-        }
+        function joinContent(value, parent) {
 
-        function checkCode(key, value, rex) {
-
-            if (key.length === 6) {
-                const codeContainer = leistrap.Div({ attr: { className: "code-container" } });
-
-                var codeHeaderContentBtns = leistrap.createContent('Span', 3, function (span, index) {
-                    span.setStyleProp("backgroundColor", `var(--leis-${["danger", "warning", "success"][index]}-cl)`);
-                    span.attr = { className: "threeBtnsCode" };
-                    return span
-                });
-                var codeTitle = leistrap.P({ text: "Leistrap dode Snappet", attr: { className: "codeTitle" } });
-                var exeCode = leistrap.Button({ text: "Exécuter" }).getButton();
-                exeCode.setType("success").setSize("small");
-                var codeHeaderContent = leistrap.Div({
-                    content: [
-                        leistrap.Div({ content: codeHeaderContentBtns })
-                    ],
-                    attr: { className: "codeHeaderContent" }
-                });
-
-                leistrap.Div({
-                    parent: codeContainer,
-                    attr: { className: "code-header" },
-                    content: [codeHeaderContent, codeTitle, leistrap.Div({ content: [exeCode] })]
-                });
-
-                const tabBtns = [];
-                const tabContent = [];
-                value.forEach((code, index) => {
-                    var item = {};
-                    leistrap.dep.obj.loopObj(code, function (v, k) {
-                        item[removeIdObject(k)] = v;
-                    });
-                    var btn = leistrap.Span({ text: `${item.title}.${item.lang}`, attr: { className: "code-btn" } });
-                    var codeContent;
-
-                    // verify if we need tp get code content from leistrap.codeExample 
-                    // property
-                    if (/#\$Excode/gi.test(item.content)) {
-                        codeContent = leistrap.codeExample[item.content.replace(/#\$Excode/gi, "")].trim();
+            if (leistrap.dep.obj.isArray(value)) {
+                var str = "";
+                value.forEach((item, index) => {
+                    if (leistrap.dep.obj.isString(item)) {
+                        /#\$text:/.test(item) ? parent.text += item.replace(/#\$text:/gi, "").trim() :
+                            str += `${item} `;
                     }
-
-                    // get the code content from other file across the internet
-                    // or web server
-                    else if (/#\$api\:/gi.test(item.content)) {
-                        // invoke the api:get channel for getting the code content
-                        // in string type
-                        var url = item.content.replace(/#\$api\:/gi, "").trim();
-
-                        leistrap.event.invoke("api:get", null, url, getCodeContent);
-                        function getCodeContent(data) {
-                            codeCard._conf.innerHTML = codeSnappet(data);
-                        }
-                        codeContent = "";
+                    else {
+                        str = addStr(str, parent);
+                        var mainObject = leistrap.Div();
+                        parent.add(mainObject);
+                        displayComponentElement(null, item, null, null, mainObject);
                     }
-
-                    else { codeContent = item.content; }
-                    var codeCard = leistrap.Div({ innerHtml: codeSnappet(codeContent) });
-                    var content = leistrap.Div({ attr: { className: 'code-content' }, content: [codeCard] });
-                    tabBtns.push(btn);
-                    tabContent.push(content);
-                    code = null;
                 });
-                leistrap.TabPage({
-                    tabLink: tabBtns,
-                    tabContent: tabContent,
-                    parent: codeContainer
-                });
-                return codeContainer
+                str = addStr(str, parent);
+            }
+            else { parent.text = value; }
 
+            function addStr(txt, parent) {
+                txt !== "" ? parent.add(leistrap.Span({ text: txt })) : null;
+                return ""
             }
 
         }
+
 
         function checkAlert(key, value, rex) {
             var type = "light";
@@ -623,7 +730,7 @@
 
                 }
             }
-            return leistrap.Alert({ type, text: value })
+            return leistrap.Alert({ type, text: value.join ? value.join(" ") : value })
         }
 
         leistrap.event.handle("display", displayComponentElement);

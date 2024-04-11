@@ -1,47 +1,264 @@
 {
-    "#$pLes propriétés": " Voice un paragraphe qui decrit les props....",
+    "#$h2": "Les méthodes",
+    "#$p": [
+        "Le composant Button de leistrap vous apporte une gamme de méthodes",
+        "techniques qui vont faciliter l'interraction des boutons dans vos applications.",
+        "Le composant Bouton permt de :"
+    ],
+    "#$ul": [
+        "Créer un groupe de boutons",
+        "Créer un mono-bouton1"
+    ],
+    "#$thbtnMethos": [
+        "Méthode",
+        "Déscription",
+        "Paramètres"
+    ],
+    "#$tablebtnMethos": [
+        [
+            "SetSize",
+            [
+                "Cette méthode permet de changer la taille d'un bouton leistrap",
+                {
+                    "#$alertif": [
+                        "Note : La taille d'un bouton leistrap doit être :",
+                        "small, normal, large."
+                    ]
+                }
+            ],
+            "String"
+        ],
+        [
+            "setType",
+            [
+                "La méthode setType permet de définir une couleur d'arrière plan d'un bouton.",
+                {
+                    "#$alertif": [
+                        "Note : Le type de couleur d'un bouton leistrap ne doit être que:",
+                        "light, dark, primary, secondary, inf;o, warning, danger, success"
+                    ]
+                }
+            ],
+            "String"
+        ],
+        [
+            "setIcon",
+            [
+                "Permet de mettre un icon sur un bouton leistrap.",
+                "Par défaut leistrap embarque fontIcpns de Boostrap."
+            ],
+            "String"
+        ],
+        [
+            "setBtnStyle",
+            [
+                "Permet de changer le style d'un bouton leistrap, le style ne doit être que:",
+                {
+                    "#$ul": [
+                        "Normal : Le bouton aura une couleur d'arrière plan et sans contour.",
+                        [
+                            "Outline : Le bouton n'aura la couleur de remplissage que si",
+                            "on fait entrer le pointeur de souris sur ce dernier. "
+                        ]
+                    ]
+                }
+            ],
+            "String"
+        ],
+        [
+            "setText",
+            "Permet de changer le texte d'un bouton",
+            "String"
+        ],
+        [
+            "removeEvent",
+            [
+                "Permet de supprimer un écouteur d'évènement associé au bouton",
+                {
+                    "#$ul": [
+                        "Le premier paramètre de la méthode, indique le type d'évènement à écouter",
+                        "Le deuxième paramètre indique le nom de l'écouteur, voir nom d'écouter d'évènement ",
+                        "Le dernier paramètre définit l'option"
+                    ]
+                }
+            ],
+            "eventtype, name, option"
+        ],
+        [
+            "destroy",
+            [
+                "Permet de detruire un bouton et de le supprimer directement du DOM"
+            ],
+            "No"
+        ],
+        [
+            "on",
+            [
+                "Permet d'ajouter un écouter d'évènement sur le bouton",
+                {
+                    "#$ul": [
+                        "Le premier paramètre de la méthode, indique le type d'évènement à écouter",
+                        "Le deuxième paramètre indique  le déclancheur d'évèment.",
+                        "Le troisième paramètre indique le nom de l'écouteur, voir nom d'écouter d'évènement ",
+                        "Le dernier paramètre définit l'option"
+                    ]
+                }
+            ],
+            "eventtype, listener, name, option"
+        ]
+    ],
+    "#$p#$h2GroupButton (groupe de boutons)": [
+        "Leistrap groupButton fait partie de la famille Button, son rôle est tout",
+        "simplement de grouper les boutons afin d'appliquer les styles, méthodes etc..",
+        "sur ces boutons."
+    ],
+    "#$p#$h3Utilisation": [
+        "pour pouvoir utiliser le composant groupButton, vous devez créer un élément Bouton",
+        "et d'appeler la methode #$mgroupBtn qui va vous retourner un object grouppButton que",
+        "vous allez commencer appliquer certaines méthoes pour créer, suprimer etc.. des",
+        "groupe de boutons"
+    ],
+    "#$p#$h3Les méthoes": [
+        "Voici une liste de méthodes applicables à un composant groupButton qui",
+        "vont faciliter l'utilisation de groupe de boutons leistrap dans votre application, page",
+        "site."
+    ],
+    "#$thgroupBtnMethods": [
+        "Méthode",
+        "Déscription",
+        "Paramètres"
+    ],
+    "#$tablegroupBtnMethods": [
+        [
+            "add",
+            [
+                "permet d'ajouter un nouveau boutton dans le groupe et le retourne",
+                "directement. Le paramètre #^mtext indique le texte à afficher sur le",
+                "bouton"
+            ],
+            "text"
+        ],
+        [
+            "destroy",
+            [
+                "Permet de détruire le groupe de boutons tout en supprimant aussi toues les",
+                "boutons qui le composent."
+            ],
+            "no"
+        ],
+        [
+            "on",
+            [
+                "La méthode #$mon permet de mettre un écouter d'évènement sur un  bouton du groupe",
+                {
+                    "#$ul": [
+                        "Le premier paramère indique le bouton qu'on souhaite mettre l'évèment",
+                        "Le deuxième paramètre de la méthode, indique le type d'évènement à écouter",
+                        "Le troisième paramètre indique  le déclancheur d'évèment.",
+                        "Le quatrième paramètre indique le nom de l'écouteur, voir nom d'écouter d'évènement ",
+                        "Et le dernier indique l'option."
+                    ]
+                }
+            ],
+            "LeisElementID, eventtype, listener, name, option"
+        ],
+        [
+            "remove",
+            "La methode #$mremove permet la suppression d'un bouton de groupe",
+            "LeisElementID"
+        ],
+        [
+            "removeAll",
+            "Permet de supprimer tous les boutons cu composant.",
+            "no"
+        ],
+        [
+            "removeEvent",
+            [
+                "Permet de supprimer un écoouteur d'évènement sur un bouton de groupe",
+                {
+                    "#$h5": "Les paramètres",
+                    "#$ul": [
+                        "Le bouton",
+                        "type d'évènement",
+                        "le déclancheur",
+                        "nom du declancheur",
+                        "options"
+                    ]
+                }
+            ],
+            "LeisElementID, removeEvent, name, options"
+        ],
+        [
+            "setBtnSize",
+            [
+                "Permet de changer la taille de tous boutons du groupe tout en précisant",
+                "la taille en largeur (width) et la taille en longeur (height)",
+                {
+                    "#$alertwr": [
+                        "Note: La largeur et la longeur doivent être les unités de taille CSS"
+                    ]
+                }
+            ],
+            "string , string"
+        ],
+        [
+            "SetSize",
+            "La méthode #$msetSize permet de donner la taille en largeur du conteneur de groupe",
+            "width"
+        ],
+        [
+            "setText",
+            [
+                "Permet de changer me texte d'un bouton donné sui appartient au groupe.",
+                {
+                    "#$ul": [
+                        "Le premier paramètre indique le bouton qu'on souhaite changer le texte",
+                        "le second paramère indique la nouvelle valeur"
+                    ]
+                }
+            ],
+            "LeisElementID, text"
+        ],
+        [
+            "setType",
+            "Permet  de changer la couleur de groupe",
+            "leistrapColorType"
+        ]
+    ],
+    "#$h4": "Exemples",
     "#$code": [
-        {
-            "lang": "html",
-            "title": "index",
-            "content": "<html></html>"
-        },
+        "La creation d'un site de comminucation entre potes",
         {
             "lang": "js",
             "title": "main",
-            "content": "console.log(10)"
+            "content": "#$api:/components/button.json",
+            "open": "true"
+        },
+        {
+            "lang": "json",
+            "title": "louis",
+            "content": "#$api:/components/button.json",
+            "open": "true"
         }
     ],
     "#$code": [
-        {
-            "lang": "html",
-            "title": "index",
-            "content": "<html></html>"
-        },
+        "La creation d'un site de comminucation entre potes",
         {
             "lang": "js",
             "title": "main",
-            "content": "#$excodecodeBtns"
-        },
-        {
-            "lang": "css",
-            "title": "style",
-            "content": "#$excodecss"
-        },
-        {
-            "lang": "json",
-            "title": "page",
-            "content": "#$api:/components/page.json"
-        },
-        {
-            "lang": "json",
-            "title": "button",
-            "content": "#$api:/components/button.json"
-        },
+            "content": "#$api:/components/button.json",
+            "open": "true"
+        }
+    ],
+    "#$h1": "heading",
+    "#$code": [
+        "La creation d'un site de comminucation entre potes",
         {
             "lang": "js",
-            "title": "leistrap",
-            "content": "#$api:/components/codes/leistrap.txt"
+            "title": "main",
+            "content": "log",
+            "open": "true"
         }
     ]
 }
